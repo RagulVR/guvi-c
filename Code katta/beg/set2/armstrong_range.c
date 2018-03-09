@@ -1,17 +1,17 @@
 #include <stdio.h>
 int main(void) {
-int a,b,temp,result=0,rem;
-scanf("%d%d",&a,&b);
-for(int i=a+1;i<b;i++)
+int m,n,temp,s=0,rem;
+scanf("%d%d",&m,&n);
+for(int i=m+1;i<n;i++)
 {
 temp=i;
 while(temp!=0)
 {
 	rem=temp%10;
-	result+=rem*rem*rem;
+	s+=rem*rem*rem;
 	temp=temp/10;
 }
-if(i==result)
+if(i==s)
 {
 	printf("%d\n",i);
 }
